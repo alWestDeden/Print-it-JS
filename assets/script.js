@@ -27,7 +27,7 @@ arrow_left.addEventListener("click", () => {
 	navPosition--
 	// loop navigation when at left
 	if (navPosition === -1) {
-		navPosition = 3
+		navPosition = (slides.length -1)
 	}
 	genererImage(navPosition)
 	console.log("Click sur la flêche gauche")
@@ -39,7 +39,7 @@ arrow_right.addEventListener("click", () => {
 	// increment navPosition variable
 	navPosition++
 	// loop navigation when at right
-	if (navPosition === 4) {
+	if (navPosition === slides.length) {
 		navPosition = 0
 	}
 	genererImage(navPosition)
